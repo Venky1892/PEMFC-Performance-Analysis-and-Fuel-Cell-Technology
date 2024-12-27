@@ -1,0 +1,11 @@
+# Proton Conductivity Improvements
+improvements = {
+    'Traditional Membrane': 100,
+    'SPI': 120,
+    'Modified PFSA': 150,
+}
+
+plt.figure(figsize=(8, 6))
+plt.bar(improvements.keys(), improvements.values(), color=['#95a5a6', '#3498db', '#2ecc71'])
+plt.ylabel('Relative Conductivity (%)')
+plt.title('Membrane Technology Performance Improvements')
