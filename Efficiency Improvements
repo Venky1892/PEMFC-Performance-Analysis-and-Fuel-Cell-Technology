@@ -1,0 +1,16 @@
+# System Performance Metrics
+categories = ['Power Density', 'Durability', 'Start-up Time']
+baseline = [100, 100, 100]
+improved = [130, 150, 70]
+
+x = range(len(categories))
+width = 0.35
+
+plt.figure(figsize=(10, 6))
+plt.bar([i - width/2 for i in x], baseline, width, label='Baseline', color='#3498db')
+plt.bar([i + width/2 for i in x], improved, width, label='Improved', color='#2ecc71')
+plt.xlabel('Performance Metrics')
+plt.ylabel('Relative Performance (%)')
+plt.title('PEMFC System Improvements')
+plt.xticks(x, categories)
+plt.legend()
