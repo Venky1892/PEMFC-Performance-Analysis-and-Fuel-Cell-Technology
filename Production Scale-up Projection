@@ -1,0 +1,9 @@
+# Projected Cost Reduction with Scale
+scale = [0, 100000, 250000, 500000]
+projected_cost = [73, 65, 45, 30]
+
+plt.figure(figsize=(10, 6))
+plt.plot(scale, projected_cost, marker='o')
+plt.xlabel('Annual Production Volume (units)')
+plt.ylabel('System Cost ($/kW)')
+plt.title('PEMFC Cost Reduction with Production Scale')
