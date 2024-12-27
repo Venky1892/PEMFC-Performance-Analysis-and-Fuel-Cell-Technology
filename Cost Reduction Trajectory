@@ -1,0 +1,16 @@
+
+import matplotlib.pyplot as plt
+
+# Current vs Target Costs ($/kW)
+costs = {
+    'Current Automotive': 73,
+    'Scale-up (500k units)': 108,
+    'Gasoline Engine': 35,
+    'DOE Target': 30
+}
+
+plt.figure(figsize=(10, 6))
+plt.bar(costs.keys(), costs.values(), color=['#2ecc71', '#3498db', '#e74c3c', '#f1c40f'])
+plt.ylabel('Cost ($/kW)')
+plt.title('PEMFC Cost Comparison')
+plt.xticks(rotation=45)
